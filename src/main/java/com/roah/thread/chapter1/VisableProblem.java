@@ -8,11 +8,15 @@ package com.roah.thread.chapter1;
  */
 public class VisableProblem {
     public static boolean stop;
+
     public static void main(String[] args) throws InterruptedException {
         //普通情况下，多线程不能保证可见性
+        System.out.println(stop);
         new Thread(() -> {
             System.out.println("Ordinary A is running...");
-            while (!stop) ;
+            while (!stop) {
+                System.out.println();
+            }
             System.out.println("Ordinary A is terminated.");
         }).start();
         Thread.sleep(10);
