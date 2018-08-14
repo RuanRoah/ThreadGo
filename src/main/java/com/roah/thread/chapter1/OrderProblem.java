@@ -17,8 +17,6 @@ public class OrderProblem {
     static String b1 = "B : x = x * 2";
     static String b2 = "B : x = x / 2";
     public static void main(String[] args) {
-        //不采取有序性措施,也没有发生有序性问题.....
-        logger.info("不采取措施：单线程串行，视为有序；多线程交叉串行，视为无序。");
         new Thread(() -> {
             System.out.println(a1);
             try {

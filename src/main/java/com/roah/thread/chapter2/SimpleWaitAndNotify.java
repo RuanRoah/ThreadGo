@@ -1,11 +1,14 @@
 package com.roah.thread.chapter2;
 
 /**
- * Created by 13 on 2017/5/4.
+ * 基础的等待和唤醒
+ *
+ * @author Roah
+ * @since 08/12/2018
  */
 public class SimpleWaitAndNotify {
     final static Object object = new Object();
-
+    //演示的时候可以试试去掉sychronized关键字
     public static class Thread1 extends Thread {
         public void run() {
             synchronized (object) {

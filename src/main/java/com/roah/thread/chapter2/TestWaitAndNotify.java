@@ -1,7 +1,11 @@
 package com.roah.thread.chapter2;
 
+
 /**
- * Created by 13 on 2017/5/4.
+ * join方法实例
+ *
+ * @author Roah
+ * @since 08/12/2018
  */
 public class TestWaitAndNotify {
     final static Object object = new Object();
