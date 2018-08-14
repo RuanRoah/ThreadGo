@@ -12,10 +12,10 @@ import org.slf4j.LoggerFactory;
 
 public class OrderProblem {
     private static final Logger logger = LoggerFactory.getLogger(OrderProblem.class);
-    static String a1 = "A : x = x + 1";
-    static String a2 = "A : x = x - 1";
-    static String b1 = "B : x = x * 2";
-    static String b2 = "B : x = x / 2";
+    static String a1 = "老大";
+    static String a2 = "老二";
+    static String b1 = "老三";
+    static String b2 = "老四";
     public static void main(String[] args) {
         new Thread(() -> {
             System.out.println(a1);

@@ -15,7 +15,6 @@ public class VisableProblem {
         new Thread(() -> {
             System.out.println("Ordinary A is running...");
             while (!stop) {
-                System.out.println();
             }
             System.out.println("Ordinary A is terminated.");
         }).start();
