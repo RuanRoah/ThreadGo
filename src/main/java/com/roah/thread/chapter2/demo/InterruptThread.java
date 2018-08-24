@@ -1,4 +1,4 @@
-package com.roah.thread.chapter2;
+package com.roah.thread.chapter2.demo;
 
 /**
  * 线程打断基础类

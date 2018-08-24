@@ -1,4 +1,4 @@
-package com.roah.thread.chapter2;
+package com.roah.thread.chapter2.demo;
 
 /**
  * 强行终止实例

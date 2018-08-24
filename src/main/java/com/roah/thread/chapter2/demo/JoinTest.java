@@ -1,4 +1,4 @@
-package com.roah.thread.chapter2;
+package com.roah.thread.chapter2.demo;
 
 /**
  * join方法实例
