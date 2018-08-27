@@ -24,7 +24,6 @@ public class JoinTest {
     }
 
     public static void main(String args[]) throws InterruptedException {
-
         AddThread at = new AddThread();
         at.start();
         at.join();//join的目的在于等待线程结束，演示的时候想着注释掉
