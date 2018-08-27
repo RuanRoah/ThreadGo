@@ -19,7 +19,7 @@ public class MapDemo {
 
         @Override
         public void run(){
-            for(int i = start;i<100000;i+=2){
+            for(int i = start;i<100000;i+=1){
                 mapTest.put(Integer.toString(i),Integer.toBinaryString(i));
             }
         }
@@ -33,6 +33,6 @@ public class MapDemo {
         test1.join();
         test2.join();
         System.out.println(mapTest.size());
-
+        //System.out.println(mapTest.toString());
     }
 }

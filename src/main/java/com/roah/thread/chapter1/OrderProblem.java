@@ -17,7 +17,7 @@ public class OrderProblem {
     static String b1 = "老三";
     static String b2 = "老四";
     public static void main(String[] args) {
-        new Thread(() -> {
+        /*new Thread(() -> {
             System.out.println(a1);
             try {
                 Thread.sleep(10);
@@ -29,7 +29,7 @@ public class OrderProblem {
         new Thread(() -> {
             System.out.println(b1);
             System.out.println(b2);
-        }).start();
+        }).start();*/
         System.out.println("---------");
     }
 }

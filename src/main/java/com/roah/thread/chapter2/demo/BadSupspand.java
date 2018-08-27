@@ -1,7 +1,5 @@
 package com.roah.thread.chapter2.demo;
 
-import org.junit.jupiter.api.Test;
-
 /**
  * Supspand不好的例子
  *
@@ -30,6 +28,8 @@ public class BadSupspand {
         t1.start();
         t1.sleep(1000);
         t2.start();
+        //This inspection reports where deprecated code is used in the specified inspection scope.
+        //官方的解释是这段属于弃用代码
         t1.resume();
         t2.resume();
         t1.join();

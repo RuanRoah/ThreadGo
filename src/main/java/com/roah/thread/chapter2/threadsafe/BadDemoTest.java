@@ -2,7 +2,7 @@ package com.roah.thread.chapter2.threadsafe;
 
 /**
  * TODO: Add Description
- *
+ * 不好的synchronized Demo
  * @author Roah
  * @since 08/24/2018
  */

@@ -24,13 +24,13 @@ public class StartAndFinish implements Runnable {
         System.out.println("-----------");
         demo.run();
         System.out.println("-----------");
-        new Thread(() -> {
+        /*new Thread(() -> {
             long i = 0;
             while(i<3){
                 System.out.println("我是你爸爸");
                 i++;
             }
-        }).start();
+        }).start();*/
         System.out.println("-----------");
         Thread thread1 = new ThreadClass();
         thread1.start();

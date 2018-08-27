@@ -12,7 +12,7 @@ public class VisableProblem {
     public static void main(String[] args) throws InterruptedException {
         //普通情况下，多线程不能保证可见性
         System.out.println(stop);
-        new Thread(() -> {
+        /*new Thread(() -> {
             System.out.println("Ordinary A is running...");
             while (!stop) {
             }
@@ -23,6 +23,6 @@ public class VisableProblem {
             System.out.println("Ordinary B is running...");
             stop = true;
             System.out.println("Ordinary B is terminated.");
-        }).start();
+        }).start();*/
     }
 }
