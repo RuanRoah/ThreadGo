@@ -1,7 +1,7 @@
 package com.roah.thread.chapter2.demo;
 
 /**
- * 线程打断基础类
+ * 线程打断Interrupt基础类
  *
  * @author Roah
  * @since 08/14/2018

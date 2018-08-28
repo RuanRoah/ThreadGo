@@ -6,18 +6,20 @@ package com.roah.thread.chapter2.threadsafe;
  * @author Roah
  * @since 08/27/2018
  */
-public class AccountDemo implements Runnable {
-    static AccountDemo instance = new AccountDemo();
+public class AccountDemo2 implements Runnable {
+    static AccountDemo2 instance = new AccountDemo2();
     static volatile int i = 0;
 
-    public synchronized static void increase() {
+    public static void increase() {
         i++;
     }
 
     @Override
     public void run() {
-        for (int i = 0; i < 100000; i++){
-            increase();
+        synchronized (instance){
+            for (int i = 0; i < 100000; i++){
+                increase();
+            }
         }
     }
 

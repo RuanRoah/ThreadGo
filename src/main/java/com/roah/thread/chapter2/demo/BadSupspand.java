@@ -34,6 +34,6 @@ public class BadSupspand {
         t2.resume();
         t1.join();
         t2.join();
-        //查看jstack进程号，这个时候t2还是运行的，电脑会很热。
+        //查看jstack加对应的进程号，这个时候t2还是运行的，电脑会很热。
     }
 }
