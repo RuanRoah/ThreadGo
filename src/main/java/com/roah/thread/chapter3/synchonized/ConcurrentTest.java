@@ -1,4 +1,4 @@
-package com.roah.thread.chapter3;
+package com.roah.thread.chapter3.synchonized;
 
 /**
  * TODO: Add Description

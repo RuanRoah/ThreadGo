@@ -1,4 +1,4 @@
-package com.roah.thread.chapter3;
+package com.roah.thread.chapter3.synchonized;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -15,8 +15,9 @@ public class ReenterLockCondition implements Runnable {
 
         try {
             lock.lock();
+            System.out.println("上锁了");
             condition.await();
-            System.out.println("Thread is going on");
+            System.out.println("走起");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -29,7 +30,7 @@ public class ReenterLockCondition implements Runnable {
         ReenterLockCondition reenterLockCondition = new ReenterLockCondition();
         Thread thread1 = new Thread(reenterLockCondition);
         thread1.start();
-        System.out.println("˯��2����");
+        System.out.println("");
         Thread.sleep(2000);
         lock.lock();
         condition.signal();

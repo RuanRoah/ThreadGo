@@ -1,11 +1,11 @@
-package com.roah.thread.chapter3;
+package com.roah.thread.chapter3.synchonized;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
- * �ź���
+ * 信号量Demo
  * Created by 13 on 2017/5/5.
  */
 public class SemapDemo implements Runnable {
@@ -24,7 +24,7 @@ public class SemapDemo implements Runnable {
     }
 
     /**
-     * �ܹ�20���߳�,ϵͳ����5���߳�һ��Ϊ��λ,����ִ�в����
+     * 信号量测试
      *
      * @param args
      */

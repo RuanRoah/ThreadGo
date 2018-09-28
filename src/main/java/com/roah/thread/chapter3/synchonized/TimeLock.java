@@ -1,4 +1,4 @@
-package com.roah.thread.chapter3;
+package com.roah.thread.chapter3.synchonized;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class TimeLock implements Runnable {
     public static ReentrantLock lock = new ReentrantLock();
-
+    //这个例子里边，线程1占用6秒锁，线程2只能try5秒，所以不强求了
     @Override
     public void run() {
         try {
@@ -30,8 +30,8 @@ public class TimeLock implements Runnable {
     }
 
     /**
-     * ������ȴ���ʱtryLock
-     * @param args
+     * Created by 13 on 2017/5/5.
+     *
      */
     public static void main(String args[]) {
         TimeLock timeLock = new TimeLock();
