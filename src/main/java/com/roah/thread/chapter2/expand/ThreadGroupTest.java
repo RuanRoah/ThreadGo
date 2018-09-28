@@ -26,6 +26,7 @@ public class ThreadGroupTest implements Runnable{
     public static void main(String[] args) {
         t1.start();
         t2.start();
+        t1.setPriority(10);
         System.out.println(threadGroup.activeCount());
         threadGroup.list();
     }
