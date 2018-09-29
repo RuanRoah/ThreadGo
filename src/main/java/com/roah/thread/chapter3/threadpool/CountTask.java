@@ -1,4 +1,4 @@
-package com.roah.thread.chapter3.synchonized;
+package com.roah.thread.chapter3.threadpool;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;

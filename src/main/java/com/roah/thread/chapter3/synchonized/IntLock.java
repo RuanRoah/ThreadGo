@@ -47,15 +47,11 @@ public class IntLock implements Runnable {
     public static void main(String args[]) throws InterruptedException {
         IntLock r1 = new IntLock(1);
         IntLock r2 = new IntLock(2);
-
         Thread thread1 = new Thread(r1);
         Thread thread2 = new Thread(r2);
-
         thread1.start();
         thread2.start();
-
         Thread.sleep(1000);
-
         thread2.interrupt();
 
     }
