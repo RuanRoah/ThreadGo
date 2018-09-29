@@ -6,10 +6,10 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * 读写锁头
+ * 读写锁头，配合可重入锁进行操作
  *
  * @author Roah
- * @since 09/24/2018
+ * @since 09/27/2018
  */
 public class ReadWriteLockDemo {
     private static Lock lock = new ReentrantLock();
@@ -60,6 +60,7 @@ public class ReadWriteLockDemo {
             public void run() {
                 try {
                     demo.handleWrite(writeLock, new Random().nextInt(100));
+                    //demo.handleRead(lock);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by 13 on 2017/5/5.
+ * Created by Roah on 2018/9/29.
  */
 public class TimeLock implements Runnable {
     public static ReentrantLock lock = new ReentrantLock();
@@ -30,7 +30,7 @@ public class TimeLock implements Runnable {
     }
 
     /**
-     * Created by 13 on 2017/5/5.
+     * Created by Roah on 2018/9/29.
      *
      */
     public static void main(String args[]) {

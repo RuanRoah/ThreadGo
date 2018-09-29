@@ -5,7 +5,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * Created by 13 on 2017/5/4.
+ * Created by Roah on 2018/9/29.
  */
 public class CyclicBarrierDemo {
     public static class Soldier implements Runnable {
@@ -37,7 +37,7 @@ public class CyclicBarrierDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(soldier + ":�������");
+            System.out.println(soldier + ":完成任务");
         }
     }
 
@@ -54,9 +54,9 @@ public class CyclicBarrierDemo {
         @Override
         public void run() {
             if (flag) {
-                System.out.println("˾��:[ʿ��" + N + "��,�������!");
+                System.out.println("司令:" + N + "个小兵完成任务!");
             } else {
-                System.out.println("˾��:[ʿ��" + N + "��,�������!");
+                System.out.println("司令：" + N + "个小兵集合完毕!");
                 flag = true;
             }
         }
@@ -68,10 +68,10 @@ public class CyclicBarrierDemo {
         Thread[] allSoldier = new Thread[N];
         boolean flag = false;
         CyclicBarrier cyclicBarrier = new CyclicBarrier(N, new BarrierRun(flag, N));
-        System.out.println("���϶���!");
+        System.out.println("start!");
         for (int i = 0; i < N; i++) {
-            System.out.println("ʿ��" + i + "����!");
-            allSoldier[i] = new Thread(new Soldier(cyclicBarrier, "ʿ��" + i));
+            System.out.println("士兵" + i + "报道！");
+            allSoldier[i] = new Thread(new Soldier(cyclicBarrier, "士兵" + i));
             allSoldier[i].start();
         }
     }

@@ -3,7 +3,7 @@ package com.roah.thread.chapter3.synchonized;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by 13 on 2017/5/5.
+ * Created by Roah on 2018/9/29.
  */
 public class TryLock implements Runnable {
     public static ReentrantLock lock1 = new ReentrantLock();

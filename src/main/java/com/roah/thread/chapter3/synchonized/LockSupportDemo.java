@@ -3,7 +3,7 @@ package com.roah.thread.chapter3.synchonized;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * TODO: Add Description
+ * 通过LockSupport重写resume，suspend程序设计
  *
  * @author Roah
  * @since 09/27/2018
@@ -13,7 +13,10 @@ public class LockSupportDemo{
     static ChangeObjectThread t1 = new ChangeObjectThread("t1");
     static ChangeObjectThread t2 = new ChangeObjectThread("t2");
 
-
+    /**
+     *
+     *
+     */
     public static class ChangeObjectThread extends Thread {
         public ChangeObjectThread(String name) {
             super.setName(name);
@@ -27,7 +30,11 @@ public class LockSupportDemo{
         }
     }
 
-
+    /**
+     *
+     * @param args
+     * @throws InterruptedException
+     */
     public static void main(String args[]) throws InterruptedException {
         t1.start();
         Thread.sleep(100);
