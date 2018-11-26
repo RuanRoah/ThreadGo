@@ -68,6 +68,7 @@ public class CyclicBarrierDemo {
         Thread[] allSoldier = new Thread[N];
         boolean flag = false;
         CyclicBarrier cyclicBarrier = new CyclicBarrier(N, new BarrierRun(flag, N));
+        //TODO
         System.out.println("start!");
         for (int i = 0; i < N; i++) {
             System.out.println("士兵" + i + "报道！");

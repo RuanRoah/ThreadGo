@@ -3,7 +3,7 @@ package com.roah.thread.chapter3.threadpool;
 import java.util.concurrent.*;
 
 /**
- * TODO: Add Description
+ * Future方法试验
  *
  * @author Roah
  * @since 09/29/2018
@@ -26,8 +26,8 @@ public class DivTask implements Runnable {
         ThreadPoolExecutor test = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 0L, TimeUnit.MILLISECONDS, new SynchronousQueue<>());
         for(int i = 0;i<5;i++){
             //test.submit(new DivTask(100,i));
-            //Future future = test.submit(new DivTask(100,i));
-            //future.get();
+            Future future = test.submit(new DivTask(100,i));
+            future.get();
             test.execute(new DivTask(100,i));
         }
 

@@ -64,7 +64,6 @@ public class CountTask extends RecursiveTask {
         long res = 0;
         try {
             res = result.get();
-            System.out.println("sum=" + res);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

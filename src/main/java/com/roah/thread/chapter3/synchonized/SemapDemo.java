@@ -15,8 +15,8 @@ public class SemapDemo implements Runnable {
     public void run() {
         try {
             semp.acquire();
-            Thread.sleep(2000);
             System.out.println(Thread.currentThread().getId() + ":done!");
+            Thread.sleep(2000);
             semp.release();
         } catch (InterruptedException e) {
             e.printStackTrace();

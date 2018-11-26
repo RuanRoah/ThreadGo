@@ -20,7 +20,6 @@ public class ThreadPoolDemo {
         }
     }
 
-
     public static void main(String args[]) {
         MyTask myTask = new MyTask();
         System.out.println(Runtime.getRuntime().availableProcessors());
@@ -28,7 +27,6 @@ public class ThreadPoolDemo {
         for (int i = 0; i < 20; i++) {
             executorService.submit(myTask);
         }
-
 
         ExecutorService executorService1 = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 20; i++) {

@@ -21,6 +21,7 @@ public class ReenterLockTest implements Runnable{
                 i++;
             } finally {
                 lock.unlock();
+                lock.unlock();
                 //Demo演示的时候，最好带上双重锁头
             }
 
