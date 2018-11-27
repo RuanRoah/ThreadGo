@@ -5,7 +5,6 @@
  */
 package com.roah.thread.chapter4.lock;
 
-import com.roah.thread.chapter2.demo.JoinTest;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -15,15 +14,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AtomicIntegerTest {
     public static AtomicInteger i = new AtomicInteger(0);
     public static class AddThread implements Runnable{
-       
         @Override
         public void run() {
             for(int j = 0;j<10000;j++){
                 i.incrementAndGet();
             }
-        
         }
-        
     }
     public static void main(String[] args) throws InterruptedException {
         Thread[] thread = new Thread[20000];
@@ -39,5 +35,4 @@ public class AtomicIntegerTest {
             thread[j].join();
         }
     }
-    
 }
